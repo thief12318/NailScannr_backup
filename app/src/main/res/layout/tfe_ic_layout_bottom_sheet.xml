@@ -12,6 +12,7 @@
     app:behavior_hideable="true"
     app:layout_behavior="com.google.android.material.bottomsheet.BottomSheetBehavior">
 
+
     <LinearLayout
         android:id="@+id/gesture_layout"
         android:layout_width="match_parent"
@@ -133,7 +134,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/crop"
+            android:id="@+id/onychomycosis_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -156,7 +157,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/view"
+            android:id="@+id/melanonychia_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
@@ -179,7 +180,7 @@
         android:orientation="horizontal">
 
         <TextView
-            android:id="@+id/rotation"
+            android:id="@+id/leukonychia_text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"

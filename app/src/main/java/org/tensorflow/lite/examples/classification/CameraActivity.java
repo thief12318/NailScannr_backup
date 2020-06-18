@@ -17,9 +17,12 @@
 package org.tensorflow.lite.examples.classification;
 
 import android.Manifest;
+import android.app.Dialog;
 import android.app.Fragment;
 import android.content.Context;
 import android.content.pm.PackageManager;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.hardware.Camera;
 import android.hardware.camera2.CameraAccessException;
 import android.hardware.camera2.CameraCharacteristics;
@@ -99,8 +102,34 @@ public abstract class CameraActivity extends AppCompatActivity
   private Device device = Device.CPU;
   private int numThreads = -1;
 
+  TextView on_view;
+  TextView me_view;
+  TextView le_view;
+  Dialog mDialog;
+
   @Override
   protected void onCreate(final Bundle savedInstanceState) {
+    setContentView(R.layout.tfe_ic_layout_bottom_sheet);
+    on_view = findViewById(R.id.onychomycosis_text);
+    me_view = findViewById(R.id.melanonychia_text);
+    le_view = findViewById(R.id.leukonychia_text);
+
+    mDialog = new Dialog(this);
+
+    on_view.setOnClickListener(new View.OnClickListener() {
+      @Override
+      public void onClick(View v) {
+        mDialog.setContentView(R.layout.popup);
+        mDialog.getWindow().setBackgroundDrawable(new ColorDrawable((Color.TRANSPARENT)));
+      }
+    });
+
+
+
+
+
+
+
     LOGGER.d("onCreate " + this);
     super.onCreate(null);
     getWindow().addFlags(WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON);
@@ -190,6 +219,16 @@ public abstract class CameraActivity extends AppCompatActivity
     device = Device.valueOf(deviceSpinner.getSelectedItem().toString());
     numThreads = Integer.parseInt(threadsTextView.getText().toString().trim());
   }
+
+
+
+
+
+
+
+
+
+
 
   protected int[] getRgbBytes() {
     imageConverter.run();
