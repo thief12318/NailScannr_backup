@@ -12,7 +12,8 @@
 
     <string name="app_name">Capstone</string>
     <string name="app_title">NailScannr</string>
-    <string name="app_desc">A Non-Invasive Health Diagnosing  Mobile Application</string>
+    <string name="app_desc">A Non-Invasive Health
+        Diagnosing  Mobile Application</string>
     <string name="get_started">Get Started</string>
     <string name="result">Result</string>
     <string name="instruction">Instructions</string>

@@ -113,8 +113,9 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Frame"
-            android:textColor="@android:color/black" />
+            android:text="More Information"
+            android:textColor="@android:color/black"
+            android:textSize="24sp" />
 
         <TextView
             android:id="@+id/frame_info"
@@ -123,7 +124,7 @@
             android:layout_marginTop="10dp"
             android:gravity="right"
             android:text="640*480"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/white" />
     </LinearLayout>
 
     <LinearLayout
@@ -136,7 +137,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Crop"
+            android:text="Onychomycosis(Yellow Fingernails)"
             android:textColor="@android:color/black" />
 
         <TextView
@@ -146,7 +147,7 @@
             android:layout_marginTop="10dp"
             android:gravity="right"
             android:text="640*480"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/white" />
     </LinearLayout>
 
     <LinearLayout
@@ -159,7 +160,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="View"
+            android:text="Melanonychia(Black Fingernails)"
             android:textColor="@android:color/black" />
 
         <TextView
@@ -169,7 +170,7 @@
             android:layout_marginTop="10dp"
             android:gravity="right"
             android:text="640*480"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/white" />
     </LinearLayout>
 
     <LinearLayout
@@ -182,7 +183,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="10dp"
-            android:text="Rotation"
+            android:text="Leukonychia(White Spots on Fingernails)"
             android:textColor="@android:color/black" />
 
         <TextView
@@ -192,8 +193,14 @@
             android:layout_marginTop="10dp"
             android:gravity="right"
             android:text="640*480"
-            android:textColor="@android:color/black" />
+            android:textColor="@android:color/white" />
     </LinearLayout>
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1px"
+        android:layout_marginTop="10dp"
+        android:background="@android:color/darker_gray" />
+
 
     <LinearLayout
         android:layout_width="match_parent"

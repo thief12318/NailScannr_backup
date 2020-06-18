@@ -124,7 +124,7 @@ public class SliderActivity extends AppCompatActivity {
     // set of Dots points
     private void addBottomDots(int currentPage) {
 //        dots = new TextView[layouts.length];
-        dots = new TextView[6];
+        dots = new TextView[8];
         dotsLayout.removeAllViews();
         for (int i = 0; i < dots.length; i++) {
             dots[i] = new TextView(this);

@@ -2,6 +2,7 @@ package org.tensorflow.lite.examples.classification;
 
 import android.content.Context;
 
+import android.graphics.drawable.RippleDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -30,31 +31,37 @@ public class SliderAdapter extends PagerAdapter {
     // img Array
     public int[] image_slide ={
             R.drawable.hands_only,
+            R.drawable.distal_edge,
             R.drawable.nail_biting,
             R.drawable.nail_polish,
             R.drawable.illumination,
             R.drawable.weather_condition,
+            R.drawable.plain_background,
             R.drawable.warning
     };
 
     // heading Array
     public String[] heading_slide ={
             "HANDS ONLY",
+            "Distal Edge",
             "NAIL BITING",
             "NAIL POLISH",
             "ILLUMINATION",
             "WEATHER",
+            "PLAIN COLOR BACKGROUND",
             "WARNING"
     };
 
     // description Array
     public String[] description_slide ={
-            "We will not consider the image of toenail for analysis purpose because toenail is not exposed to air so its color is not too natural when compared with finger-nail; also toe-nail is harder in comparison to the finger nail, so it is easier to detect the disease if present in human body through finger nail.",
-            "The case of oral compulsive habit of nail biting will not be taken under consideration, these images can not be used for the data present as they can produce erroneous results. Pitted nail and bitted nail cannot be differentiated properly even by human eyes. therefore the proposed system will not cater to this problem.",
-            "Polished nail/dyed nail (using some kind of Ink generally the case of voting) will not be considered for the analysis, so before performing the analysis the nail must be cleaned properly such that the nail must be translucent in appearance",
+            "NailScannr only allow fingernails to be tested, because toenails tends to discolor due to its nature.",
+            "Distal edge (free edges) of nails can affect the result of analysis, always trim your fingernail before using NailScannr",
+            "Pitted nail and bitted nail cannot be differentiated properly even by human eyes. therefore NailScannr will not allow bitten nails.",
+            "Nail must be cleaned properly before using NailScannr to avoid getting wrong results.",
             "The illumination in the room must be proper or focus of the light on the nail must be adequate before taking an image.",
             "The nail image must be taken in normal room temperature as color of the nail can be affected in extreme cold temperature.",
-            "This app is not intended to replace traditional methods of the evaluation of fingernail risk level, is not a diagnosis, and is not a substitute for visits to a healthcare professional."
+            "Use plain color background to increase accuracy",
+            "NailScannr is not intended to replace traditional methods of the evaluation of fingernail risk level, is not a diagnosis, and is not a substitute for visits to a healthcare professional."
     };
 
 
