@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- <color name="tfe_color_primary">#ffa800</color>
+    <color name="tfe_color_primary_dark">#ff6f00</color>
+    <color name="tfe_color_accent">#425066</color> -->
+    <color name="tfe_color_primary">#262938</color>
+    <color name="tfe_color_primary_dark">#181A24</color>
+    <color name="tfe_color_accent">#FF4081</color>
+    <color name="colorPrimary">#262938</color>
+    <color name="colorPrimaryDark">#181A24</color>
+    <color name="colorAccent">#FF4081</color>
+    <color name="colorAppDivider">#FF4081</color>
+    <color name="colorWhite">#FFFFFF</color>
+    <color name="colortWhite">#CCCCCC</color>
+    <color name="tfe_semi_transparent">#66000000</color>
+</resources>
